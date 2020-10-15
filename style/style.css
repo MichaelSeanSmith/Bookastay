@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway');
+
+html 
+{
+	scroll-behavior: smooth;
+}
+
+header
+{
+	margin-top: 2em;
+}
+
+header img
+{
+	width: 25em;
+}
+
+#logo
+{
+	width: 25em;
+}
+
+body
+{
+	background-color: #fffef5;
+}
+
+.card
+{
+	border-width: 0.5px;
+}
+
+.card-body
+{
+	font-family: 'Raleway', sans-serif;
+	color: #374050;
+}
+
+h4
+{
+	color: #374050;
+}
+
+.card-header
+{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	background-color: #91a8d1;
+	color: white;
+}
+
+.profileLink
+{
+	background: transparent!important;
+	border: none;
+	padding: 0!important;
+	color: white;
+}
+
+.btn
+{
+	background-color: #a1c2b1;
+	color: white;
+}
+
+.btn:hover
+{
+	background-color: #bbe0cd;
+	color: 374050;
+}
+
+.alert
+{
+	background-color: white;
+	color: #374050;
+	border-width: 0.5px;
+	border-color: #e5e5e5;
+}

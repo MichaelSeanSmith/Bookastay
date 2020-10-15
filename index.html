@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Michael Smith">
+	<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="icon" type="image/png" href="images/icon.png">
+	</head>
+<body>
+	<div class="container">
+		<header>
+			<img src="images/logo.PNG" alt="Logo">
+		</header>
+		<hr class="row mt-5"/>
+		<div class="row mt-5" style="text-align: center;">
+			<h4 class="col-4"><i class='fas fa-map-marker'></i> Find or List a Location</h4>
+			<h4 class="col-4"><i class="fas fa-comment-alt"></i> Contact Users</h4>
+			<h4 class="col-4"><i class="fas fa-donate"></i> Get the Best Deal</h4>
+		</div>
+		<div class="row mt-5">
+			<h5 class="col-12">Bookastay is an online marketplace that connects people who want to rent out their property with people who are looking for accommodation or unforgettable trips. Find adventures nearby or in faraway places and access unique homes, experiences, and places around the world, or make money while others do so.</h5>
+		</div>
+		<section id="forms" class="mt-5">
+			<div class="row">
+				<div class="col-12 col-sm-6">
+					<div class="card">
+						<form action="php/home.php" method="post">
+							<fieldset>
+								<div class="card-header"><legend>Login</legend></div>
+								<div class="card-body">
+									<div class="row">
+										<div class="col-12 col-lg-6">
+											<label for="loginEmail">Email Address:</label>
+											<input type="email" id="loginEmail" class="form-control" placeholder="email@address.com" required name="email">
+										</div>
+										<div class="col-12 col-lg-6">
+											<label for="loginPass">Password:</label>
+											<input type="password" id="loginPass" class="form-control" placeholder="******" required name="pass">
+										</div>
+									</div>
+									<div class="row mt-3">
+										<div class="col-12">
+											<button type="submit" class="btn btn-light">Login</button>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 mt-3 mb-5 mt-sm-0">
+					<div class="card">
+						<form action="php/register.php" method="post" enctype="multipart/form-data">
+							<fieldset>
+								<div class="card-header"><legend>Register</legend></div>
+								<div class="card-body">
+									<div class="row">
+										<div class="col-12 col-lg-6">
+											<label for="regName">Name:</label>
+											<input type="text" id="regName" class="form-control" placeholder="Michael" required name="regName">
+										</div>
+										<div class="col-12 col-lg-6">
+											<label for="regSurname">Surname:</label>
+											<input type="text" id="regSurname" class="form-control" placeholder="Smith" required name="regSurname">
+										</div>
+									</div>
+									<div class="row mt-3">
+										<div class="col-12 col-lg-6">
+											<label for="regEmail">Email Address:</label>
+											<input type="email" id="regEmail" class="form-control" placeholder="email@address.com" required name="regEmail">
+										</div>
+										<div class="col-12 col-lg-6">
+											<label for="regNumber">Contact Number:</label>
+											<input type="number" id="regNumber" class="form-control" placeholder="012 345 6789" required name="regNumber">
+										</div>
+									</div>
+									<div class="row mt-3">
+										<div class="col-12 col-lg-6">
+											<label for="pass1">Create Password:</label>
+											<input type="password" id="pass1" class="form-control" placeholder="******" required name="regPass1">
+										</div>
+										<div class="col-12 col-lg-6">
+											<label for="pass2">Confirm Password:</label>
+											<input type="password" id="pass2" class="form-control" placeholder="******" required name="regPass2">
+										</div>
+									</div>
+									<div class="row mt-3">
+										<div class="col-12">
+											<label for="uploadpp">Profile Picture:</label>
+											<div id="uploadpp" class="custom-file">
+												<input type="file" class="custom-file-input" id="pp" name="pp">
+												<label class="custom-file-label" id="ppLabel" for="pp">Choose file...</label>
+											</div>
+										</div>
+									</div>
+									<div class="row mt-3">
+										<div class="col-12">
+											<button type="submit" class="btn btn-light">Register</button>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</body>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
